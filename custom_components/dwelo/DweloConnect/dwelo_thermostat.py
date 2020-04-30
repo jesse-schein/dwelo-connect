@@ -24,7 +24,7 @@ class DweloThermostat(DweloDevice):
                 lambda x: x["sensorType"] == DweloSensor.TEMPERATURE.value, self.state
             )
         )[0]["value"]
-        return sensorTemp
+        return float(sensorTemp)
 
     def GetSensorHumidity(self):
         sensorHumidity: float = list(
