@@ -1,0 +1,7 @@
+{
+  "domain": "dwelo",
+  "name": "Dwelo",
+  "documentation": "https://www.home-assistant.io/integrations/dyson",
+  "requirements": [],
+  "codeowners": ["@jesse-schein"]
+}
