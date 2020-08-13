@@ -102,15 +102,15 @@ class DweloThermostatDevice(ClimateDevice):
             target_temp = self._device.GetSetPointHeat()
         return float(target_temp)
 
-    @property
-    def current_humidity(self):
-        """Return the current humidity."""
-        humidity = self._device.GetSensorHumidity()
-        if humidity:
-            if humidity == 0:
-                return None
-            return humidity
-        return None
+    #@property
+    #def current_humidity(self):
+    #    """Return the current humidity."""
+    #    humidity = self._device.GetSensorHumidity()
+     #   if humidity:
+     #       if humidity == 0:
+    #            return None
+    #        return humidity
+    #    return None
 
     @property
     def hvac_mode(self):
